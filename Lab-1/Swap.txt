@@ -1,19 +1,19 @@
-//WRITE A JAVA PROGRAM TO DEMO ASSIGNMENT OPERATOR?
+public class SwapNUm {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
 
-public class Operator {
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
 
-	public static void main(String[] args) {
-		//Assignment operators
-		int x=10;
-		System.out.println("value of x "+x);
-		x+=20;// x=x+20;
-		System.out.println("value of x "+x);
-		int i =45;
-		System.out.println("value of i "+i);
-         i=13;
-        System.out.println("value of i "+i);
         
-	}
+        int temp = a;
+        a = b;
+        b = temp;
 
+        System.out.println("\nAfter swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
 }
- 
