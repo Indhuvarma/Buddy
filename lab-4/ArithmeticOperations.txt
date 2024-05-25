@@ -1,37 +1,20 @@
+package Anudeep;
 import java.util.Scanner;
+public class TwoUsers {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
 
-public class ArithmeticOperations {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter the first number: ");
+	        int num1 = scanner.nextInt();
 
-        // Input first number
-        System.out.print("Enter the first number: ");
-        double num1 = scanner.nextDouble();
-
-        // Input second number
-        System.out.print("Enter the second number: ");
-        double num2 = scanner.nextDouble();
-
-        // Perform addition
-        double sum = num1 + num2;
-        System.out.println("Sum of " + num1 + " and " + num2 + " is: " + sum);
-
-        // Perform subtraction
-        double difference = num1 - num2;
-        System.out.println("Difference of " + num1 + " and " + num2 + " is: " + difference);
-
-        // Perform multiplication
-        double product = num1 * num2;
-        System.out.println("Product of " + num1 + " and " + num2 + " is: " + product);
-
-        // Perform division
-        if (num2 != 0) {
-            double quotient = num1 / num2;
-            System.out.println("Division of " + num1 + " by " + num2 + " is: " + quotient);
-        } else {
-            System.out.println("Cannot divide by zero.");
-        }
-
-        scanner.close();
-    }
-}
+	        System.out.print("Enter the second number: ");
+	        int num2 = scanner.nextInt();
+	        int add;
+	        int sub;
+	        int mul;
+	        int div;
+	        System.out.println("Add of two numbers:-" + (num1+num2) );
+	        System.out.println("sub of two numbers:-" + (num1-num2));
+	        System.out.println("mul of two numbers:-" + (num1*num2) );
+	        System.out.println("div of two numbers:-" + (num1/num2));
+	    }}
