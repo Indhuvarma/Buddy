@@ -1,35 +1,28 @@
+package myfirstprogram;
+
 import java.util.Scanner;
 
-public class CircleAreaCalculator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input;
+public class Circle {
 
-        do {
-            System.out.print("Do you want to find the area of a circle? (YES/NO): ");
-            input = scanner.nextLine().toUpperCase();
+	public static void main(String[] args) {
 
-            if (input.equals("YES")) {
-                System.out.print("Enter the radius of the circle: ");
-                double radius = scanner.nextDouble();
+	   Scanner t=new Scanner(System.in);
+	   String userinput;
+	   {
+		   System.out.println("Enter YES to move to next step:");
+		   userinput=t.nextLine();
+	   }
+	   
+		
+        double radius,area;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the radius of the circle");
+        
 
-                double area = calculateArea(radius);
-                System.out.println("The area of the circle with radius " + radius + " is: " + area);
-            } else if (!input.equals("NO")) {
-                System.out.println("Invalid input. Please enter YES or NO.");
-            }
+        radius = sc.nextDouble();
+        area = Math.PI*radius*radius;
+        System.out.println("Area of circle is:" +area);
+	}
 
-            // Consume the newline character left in the input buffer
-            scanner.nextLine();
-
-        } while (!input.equals("NO"));
-
-        System.out.println("Exiting the program. Goodbye!");
-        scanner.close();
-    }
-
-    // Method to calculate the area of a circle
-    public static double calculateArea(double radius) {
-        return Math.PI * radius * radius;
-    }
 }
+
