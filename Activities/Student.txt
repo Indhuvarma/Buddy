@@ -1,0 +1,35 @@
+public class Student {
+	
+	    String name;
+	    int rollNo;
+	    char section;
+	    
+	    Student(String name, int rollNo ,char section)
+	    {
+	        this.name = name;
+	        this. rollNo = rollNo;
+	        this.section= section;
+	                
+	    }
+	    
+	    public void studentData()
+	    {
+	        System.out.println("Name of Student = " + name);
+	        System.out.println("Roll no = "+ rollNo);
+	        System.out.println("Section = "+ section);
+	       
+	    }
+	    
+	    public static void main (String arg[])
+	    {
+	             // Creating object and providing some values by using parameterized constructor
+	        
+	        Student student1 = new Student("Buddy", 12,'A');
+	        student1.studentData();
+	        
+	        Student student2 = new Student("Varma", 5, 'C');
+	        student2.studentData();
+	        
+	    }
+	    
+	}

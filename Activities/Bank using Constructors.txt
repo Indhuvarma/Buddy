@@ -1,0 +1,37 @@
+public class Bank{
+    int acno;
+    String atype;
+    double amount;
+    
+   public Bank(String atype, int acno)
+    {
+        this.atype = atype;
+        this. acno = acno;
+    }
+    
+    public Bank(int acno, String atype ,long i)
+    {
+        this.acno = acno;
+        this. atype = atype;
+        this.amount = i;
+             
+    }
+    
+    public void Bank ()
+    {
+        System.out.println("Account Number= " + acno);
+        System.out.println("Account Type= "+ atype);
+        System.out.println("Amount = "+ amount);
+        
+    }
+    
+    public static void main (String arg[])
+    {
+        Bank Bank1 = new Bank("Savings",868761373);
+        Bank1.Bank();
+        
+        Bank Bank2= new Bank(1379462853, "Current",5800 );
+        Bank2.Bank();
+        
+    }    
+}
