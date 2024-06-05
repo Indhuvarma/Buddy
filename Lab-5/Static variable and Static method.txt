@@ -1,0 +1,23 @@
+package Anudeep;
+
+public class Employee {
+        int id;
+        String name;
+        static String company ="WIPRO";
+        Employee(int id,String n){
+        	this.id=id;
+        	name=n;
+        }
+        void display() {
+        	System.out.println(id+" "+name+" "+company);
+        }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e1=new Employee(67, "BUDDY");
+		Employee e2=new Employee(69, "VARMA");
+		e1.display();
+		e2.display();
+
+	}
+
+}

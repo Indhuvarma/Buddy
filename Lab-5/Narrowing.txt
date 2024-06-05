@@ -1,0 +1,19 @@
+package Anudeep;
+
+public class Narrowing {
+
+	private static final int d = 0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		        int a=20;
+		        float b=20;
+		        float c= (float)a;
+		        		
+		                System.out.println(a);
+		                System.out.println(b);
+		                System.out.println(c);
+		            }
+		        }
+		  
