@@ -1,0 +1,41 @@
+public class Employee{
+	String name ="Indhu";  //employee name
+	int id=12;     //empoloyee ID
+	    public void name()
+	    {
+	        System.out.println("Employee name = "+ name);
+	        System.out.println("Employee ID :"+ id);
+	        }
+	}
+	class Manager extends Employee
+	{
+	   String role = "International Voice process";
+	   int Salary=28000;
+	    
+	    public void role()
+	    {
+	        System.out.println("Manager role is = "+ role);
+	        System.out.println("salary per month:" + Salary);
+	         }
+	    }
+	 class Intern extends Manager
+	{
+	   String duration="12";//12 months working as an intern
+	   int workinghours =8;
+	 
+	     public void hours()
+	    {
+	    	System.out.println("Duration of the intern:"+ duration);
+	        System.out.println("Working hours:" + workinghours);
+	      
+	    }
+	    
+	    public static void main(String arg[])
+	    {
+	        Intern  newIntern = new Intern ();
+	        newIntern.name();
+	        newIntern.role();
+	        newIntern.hours();
+	    }
+	}
+
