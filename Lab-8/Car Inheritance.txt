@@ -1,0 +1,31 @@
+package Anudeep;
+
+class Vehicle
+{
+    String brand = "Suzuki";
+    String model = "alto800";
+    int year = 1996;
+    
+    void drive()
+    {
+        System.out.println("name of the company car :" +brand);
+        System.out.println("model of the car :" +model);
+        System.out.println("launched in the year :" +year);
+    }
+}
+ class Car extends Vehicle
+{
+    String color = "white";
+    
+     void honk()
+    {
+        System.out.println("Color of model = "+ color);
+    }
+    
+    public static void main(String arg[])
+    {
+        Car newCar = new Car();
+        newCar.drive();
+        newCar.honk();
+    }
+}

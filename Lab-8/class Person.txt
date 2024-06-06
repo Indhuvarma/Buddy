@@ -1,0 +1,29 @@
+class Person
+{
+    String name = "Indhu";
+    int age= 22;
+    
+    void speak()
+    {
+        System.out.println("name of the person:" +name);
+        System.out.println("age of the person:" +age);
+    }
+}
+ class Student extends Person
+{
+    char grade= 'B';
+    
+     void Study()
+    {
+        System.out.println("Grade of the student :"+ grade);
+    }
+    
+    public static void main(String arg[])
+    {
+        Student newStudent = new Student();
+        newStudent.speak();
+        newStudent.Study();
+    }
+}
+
+
