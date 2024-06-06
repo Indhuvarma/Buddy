@@ -1,0 +1,51 @@
+
+
+class Person {
+
+	String name = "Indhu";
+	int age = 16;
+
+	public void age() {
+		System.out.println("Person's name = " + name);
+		System.out.println("Person's age :" + age);
+	}
+}
+
+class Teacher extends Person {
+	String subject = "Maths";
+
+	public void sub() {
+		System.out.println("Teacher teaches the subject is :" + subject);
+	}
+}
+
+class Student extends Teacher {
+	String name = "buddy";
+	char section = 'B';
+
+	public void name() {
+		System.out.println("name of the student :" + name);
+		System.out.println("section of the student :" + section);
+
+	}
+}
+
+class Staff extends Student {
+	String department = "Computer science";
+
+	public void getdetails() {
+		System.out.println("department :" + department);
+	}
+
+}
+
+class Staffmain {
+	public static void main(String arg[]) {
+		Staff s = new Staff();
+		s.age();
+		s.sub();
+		s.name();
+		s.getdetails();
+	}
+
+}
