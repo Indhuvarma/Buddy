@@ -1,0 +1,40 @@
+package Brilliant;
+
+abstract class ShapeClass {
+   public abstract double calculation();
+}
+
+class Rectangle extends Shape {
+    private double length;
+    private double width;
+
+    // Constructor for Rectangle
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+  public double calculation() {
+        return length * width;
+    }
+}
+
+class Circle extends Shape {
+    private double radius;
+
+    // Constructor for Circle
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+ public double calculation() {
+        return Math.PI * radius * radius;
+    }
+}
+
+public class Shape {
+    public static void main(String[] args) {
+      Rectangle rectangle = new Rectangle(3, 2);
+      System.out.println("Area of Rectangle: " + rectangle.calculation());
+      Circle circle = new Circle(3);
+      System.out.println("Area of Circle: " + circle.calculation());
+    }
+}

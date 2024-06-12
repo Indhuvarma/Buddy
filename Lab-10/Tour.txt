@@ -1,0 +1,60 @@
+package Brilliant;
+
+class HillStations {
+   
+    public void location() {
+        System.out.println("It is Hill Station");
+    }
+    public void famousFor() {
+        System.out.println("It is famous for adventure activities and to enjoy beauty");
+    }
+}
+
+class Manali extends HillStations {
+    public void location() {
+        System.out.println("Manali is located in Himachal Pradesh");
+    }
+  public void famousFor() {
+        System.out.println("It is Snow-capped mountains and adventure sports");
+    }
+}
+
+class Mussoorie extends HillStations {
+    public void location() {
+        System.out.println(" Mussoorie is located in Uttarakhand");
+    }
+  public void famousFor() {
+        System.out.println("It is famous for Stunning views of the Himalayas ");
+    }
+}
+
+class Gulmarg extends HillStations {
+    public void location() {
+        System.out.println(" Gulmarg is located in Jammu and Kashmir");
+    }
+ public void famousFor() {
+        System.out.println("It is famous for Skiing and picturesque landscapes");
+    }
+}
+
+public class Tour {
+    public static void main(String[] args) {
+        // Creating objects of each subclass
+        HillStations manali = new Manali();
+        HillStations mussoorie = new Mussoorie();
+        HillStations gulmarg = new Gulmarg();
+
+        // Calling methods using superclass reference
+        System.out.println("Manali:");
+        manali.location();
+        manali.famousFor();
+
+        System.out.println("\nMussoorie:");
+        mussoorie.location();
+        mussoorie.famousFor();
+
+        System.out.println("\nGulmarg:");
+        gulmarg.location();
+        gulmarg.famousFor();
+    }
+}
