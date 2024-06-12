@@ -1,0 +1,59 @@
+package Brilliant;
+
+interface BankingInterface {
+    void deposit(double amount);
+    void withdraw(double amount);
+    double getBalance();
+}
+class SavingsAccount implements BankingInterface {
+    private double balance;
+    public SavingsAccount(double initialBalance) {
+        this.balance = initialBalance;
+    }
+ public void deposit(double amount) {
+        balance += amount;
+    }
+    public void withdraw(double amount) {
+        if (balance >= amount) {
+            balance -= amount;
+        } else {
+            System.out.println("Insufficient funds");
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+// CurrentAccount class implementing BankingInterface
+class CurrentAccount implements BankingInterface {
+    private double balance;
+
+    // Constructor for CurrentAccount
+    public CurrentAccount(double initialBalance) {
+        this.balance = initialBalance;
+    }
+ public void deposit(double amount) {
+        balance += amount;
+    }
+ public void withdraw(double amount) {
+        balance -= amount;
+    }
+    public double getBalance() {
+        return balance;
+    }
+}
+
+public class Bank {
+    public static void main(String[] args) {
+        SavingsAccount savingsAccount = new SavingsAccount(1000);
+        CurrentAccount currentAccount = new CurrentAccount(2000);
+        savingsAccount.deposit(500);
+        savingsAccount.withdraw(200);
+        currentAccount.deposit(1000);
+        currentAccount.withdraw(500);
+        System.out.println("Savings Account Balance: " + savingsAccount.getBalance());
+        System.out.println("Current Account Balance: " + currentAccount.getBalance());
+    }
+}

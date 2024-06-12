@@ -1,0 +1,26 @@
+package Brilliant;
+
+public interface Person {
+    void speak();
+}
+
+// Student class implementing Person interface
+class Student implements Person {
+   public void speak() {
+        System.out.println("I am a student.");
+    }
+}
+class Teacher implements Person {
+    public void speak() {
+        System.out.println("I am a teacher.");
+    }
+ public static void main(String[] args) {
+        // Create objects of Student and Teacher classes
+        Student student = new Student();
+        Teacher teacher = new Teacher();
+
+        // Call the speak method for student and teacher objects
+        student.speak();
+        teacher.speak();
+    }
+}
