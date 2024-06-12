@@ -1,0 +1,24 @@
+class Manager{
+    void  authenticate(String name, String password) {
+       System.out.println(name+ "  login successful.");
+   }
+    void authenticate(String email, long phoneno) {
+       System.out.println(email+"  login successful using EmailId.");
+   }
+    void  authenticate(long phoneno,int pin) {
+       System.out.println(phoneno+"  login successful using phoneNo.  ");
+   }
+   }
+class Authentication {
+
+   public static void main(String[] args) {
+       // TODO Auto-generated method stub
+
+       Manager Manager=  new Manager();
+       Manager.authenticate(987654321, 141711);
+       Manager.authenticate("indhuvarma326@gmail.com",12546789);
+       Manager.authenticate(867568461,500046);
+       
+   }
+
+}
