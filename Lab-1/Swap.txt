@@ -1,19 +1,24 @@
-//WRITE A JAVA PROGRAM TO DEMO ASSIGNMENT OPERATOR?
+package samplejava;
+public class Swapping{
+ public static void main(String[] args) {
+  int x = 10; //x stores 10
+  int y = 20; //y stores 20
 
-public class Operator {
+  System.out.println("Before Swapping");
+  System.out.println("Value of x is :" + x);// It prints x value is 10
+  System.out.println("Value of y is :" + y);// It prints y value is 20
 
-	public static void main(String[] args) {
-		//Assignment operators
-		int x=10;
-		System.out.println("value of x "+x);
-		x+=20;// x=x+20;
-		System.out.println("value of x "+x);
-		int i =45;
-		System.out.println("value of i "+i);
-         i=13;
-        System.out.println("value of i "+i);
-        
-	}
+  //swap the value
+  swap(x, y);
+ }
 
+ private static void swap(int x, int y) {
+  int temp = x;
+  x = y;
+  y = temp;
+
+  System.out.println("After Swapping");
+  System.out.println("Value of x is :" + x);//It prints x value is 20
+  System.out.println("Value of y is :" + y);//It prints y value is 10
+ }
 }
- 
