@@ -1,0 +1,21 @@
+package teacher;
+import person.Person;
+
+public class Teacher extends Person {
+    private String subject;
+    public String teacherID;
+    // Constructor
+    public Teacher(String name, int age, String address, String phoneNumber, String subject, String teacherID) {
+        super(name, age, address, phoneNumber);
+        this.subject = subject;
+        this.teacherID = teacherID;
+    }
+
+    // Method to display teacher's info
+    public void displayTeacherInfo() {
+        // Display info from Person class
+        displayInfo();
+        System.out.println("Subject: " + subject);
+        System.out.println("Teacher ID: " + teacherID);
+    }
+}
