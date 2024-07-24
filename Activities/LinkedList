@@ -1,0 +1,33 @@
+import java.util.LinkedList;
+
+class Main{
+
+ public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>();
+
+        // Add elements
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+
+        System.out.println("Initial List: " + list);
+
+        // Insert an element at a specific position
+        list.add(1, "Date");
+        System.out.println("After inserting 'Date': " + list);
+
+        // Remove an element at a specific position
+        list.remove(2);
+        System.out.println("After removing the element at index 2: " + list);
+
+        // Remove the first occurrence of an element
+        list.remove("Apple");
+        System.out.println("After removing 'Apple': " + list);
+
+        // Get the element at a specific position
+        System.out.println("Element at index 1: " + list.get(1));
+
+        // Check if the list contains an element
+        System.out.println("Contains 'Banana': " + list.contains("Banana"));
+    }
+}
