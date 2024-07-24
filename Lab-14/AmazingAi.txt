@@ -1,0 +1,21 @@
+public class Amazing {
+    public static void main(String[] args) {
+        String str = "OpenAI is amazing";
+        StringBuilder sb = new StringBuilder(str);
+
+        // Find the index of the first space
+        int spaceIndex = sb.indexOf(" ");
+
+        // Extract the first word
+        String firstWord = sb.substring(0, spaceIndex);
+
+        // Extract the rest of the string
+        String rest = sb.substring(spaceIndex + 1);
+
+        // Append the rest, followed by the first word
+        sb = new StringBuilder(rest).append(" ").append(firstWord);
+
+        System.out.println(sb.toString());  // Output: amazing is OpenAI
+    }
+    
+}
