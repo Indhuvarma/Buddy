@@ -1,0 +1,23 @@
+public class StringDup {
+    public static void printDuplicateCharacters(String inputString) {
+        // Array to store the count of each character (assuming ASCII)
+        int[] charCount = new int[256];
+
+        // Traverse the string and count each character
+        for (int i = 0; i < inputString.length(); i++) {
+            charCount[inputString.charAt(i)]++;
+        }
+
+        // Traverse the array to find and print duplicates
+        for (int i = 0; i < 256; i++) {
+            if (charCount[i] > 1) {
+                System.out.println("'" + (char) i + "' appears " + charCount[i] + " times");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        String inputString = "programming";
+        printDuplicateCharacters(inputString);
+    }
+}

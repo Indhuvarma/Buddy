@@ -1,0 +1,24 @@
+public class WhiteSpaces {
+    public static String removeWhiteSpaces(String inputString) {
+        // StringBuilder to construct the new string without white spaces
+        StringBuilder result = new StringBuilder();
+
+        // Traverse the string
+        for (int i = 0; i < inputString.length(); i++) {
+            // If the character is not a white space, add it to the result
+            if (!Character.isWhitespace(inputString.charAt(i))) {
+                result.append(inputString.charAt(i));
+            }
+        }
+        // Convert StringBuilder to String and return
+        return result.toString();
+    }
+    public static void main(String[] args) {
+        String inputString = "Hello, this is a test string.";
+        String resultString = removeWhiteSpaces(inputString);
+        System.out.println("Original string: \"" + inputString + "\"");
+        System.out.println("String without white spaces: \"" + resultString + "\"");
+    }
+
+    
+}
