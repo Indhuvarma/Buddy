@@ -1,0 +1,30 @@
+public class Main1 {
+    public static void main(String[] args) {
+        Vector<String> vector = new Vector<>();
+
+        // Add elements
+        vector.addElement("Apple");
+        vector.addElement("Banana");
+        vector.addElement("Cherry");
+
+        System.out.println("Initial Vector: " + vector);
+
+        // Insert an element at a specific position
+        vector.insertElementAt("Date", 1);
+        System.out.println("After inserting 'Date': " + vector);
+
+        // Remove an element at a specific position
+        vector.removeElementAt(2);
+        System.out.println("After removing the element at index 2: " + vector);
+
+        // Remove the first occurrence of an element
+        vector.removeElement("Apple");
+        System.out.println("After removing 'Apple': " + vector);
+
+        // Get the element at a specific position
+        System.out.println("Element at index 1: " + vector.get(1));
+
+        // Check if the vector contains an element
+        System.out.println("Contains 'Banana': " + vector.contains("Banana"));
+    }
+}
